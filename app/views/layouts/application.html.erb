@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+    <h3><%= flash[:notice]%></h3>
+    <% end %>
+    <% if current_user %>
+    <h2> Hello, <%= current_user.name%>!</h2>
+    <%= link_to "Logout", sessions_path, method: :delete%>
+    <% else%>
+    <%= link_to "Login", new_session_path%>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
