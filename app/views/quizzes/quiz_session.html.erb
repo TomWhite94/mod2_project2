@@ -2,5 +2,10 @@
 
 <% @random_quiz_questions.each do |quiz| %>
 <%= quiz.question %>
-<%= image_tag(quiz.image_url) %>
+
 <% end %>
+
+<style>/*
+<= image_tag(quiz.image_url) >
+can not popolate image as quiz does not belong to image (there is no structure like one image has many questions related to itself)
+*/<style>
