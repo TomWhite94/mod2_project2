@@ -1,0 +1,2 @@
+module QuizUsersHelper
+end
