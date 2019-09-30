@@ -1,0 +1,8 @@
+<h1>Please choose your quize difficulty and genre</h1>
+
+<%= form_for(@quiz) do |f| %>
+<%= f.collection_select :difficulty, Quiz.all.difficulty, :id, :name %>
+<%= f.submit %> 
+<% end %>
+
+
