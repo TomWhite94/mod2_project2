@@ -15,7 +15,7 @@ g2 = Genre.create(:name => "Drama")
 g3 = Genre.create(:name => "Sports")
 
 
-i1 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
+g1 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i2 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i3 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i4 = Image.create(:image_url => "https://en.wikipedia.org/wiki/Tom_Cruise#/media/File:Tom_Cruise_by_Gage_Skidmore_2.jpg", :genre_id => g2.id)
@@ -62,6 +62,7 @@ q27 = Quiz.create(:question => "Who is this actor27?", :difficulty => "Hard", :g
 q28 = Quiz.create(:question => "Who is this actor28?", :difficulty => "Hard", :genre_id => g2.id, :answer => "TomW")
 q29 = Quiz.create(:question => "Who is this actor29?", :difficulty => "Hard", :genre_id => g2.id, :answer => "TomW")
 q30 = Quiz.create(:question => "Who is this actor30?", :difficulty => "Hard", :genre_id => g2.id, :answer => "TomW")
+
 
 q31 = Quiz.create(:question => "Whatis this sports31?", :difficulty => "Easy", :genre_id => g3.id, :answer => "Rugby")
 q32 = Quiz.create(:question => "Who is this sports32?", :difficulty => "Easy", :genre_id => g3.id, :answer => "Rugby")

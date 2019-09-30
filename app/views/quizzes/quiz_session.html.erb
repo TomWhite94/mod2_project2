@@ -2,4 +2,5 @@
 
 <% @random_quiz_questions.each do |quiz| %>
 <%= quiz.question %>
+<%= image_tag(quiz.image_url) %>
 <% end %>
