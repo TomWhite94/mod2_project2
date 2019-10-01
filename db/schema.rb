@@ -11,7 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_09_30_160716) do
+=======
+ActiveRecord::Schema.define(version: 2019_09_30_163733) do
+>>>>>>> c85c25efda9fb73b24460e45ca3c5b3690e1d265
 =======
 ActiveRecord::Schema.define(version: 2019_09_30_163733) do
 >>>>>>> c85c25efda9fb73b24460e45ca3c5b3690e1d265
@@ -52,6 +56,10 @@ ActiveRecord::Schema.define(version: 2019_09_30_163733) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    t.string "password_digest"
+>>>>>>> c85c25efda9fb73b24460e45ca3c5b3690e1d265
 =======
     t.string "password_digest"
 >>>>>>> c85c25efda9fb73b24460e45ca3c5b3690e1d265
