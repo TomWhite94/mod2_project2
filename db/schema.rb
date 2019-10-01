@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_085017) do
     t.integer "difficulty_id"
     t.integer "genre_id"
     t.string "answer"
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -53,7 +54,6 @@ ActiveRecord::Schema.define(version: 2019_10_01_085017) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-   
   end
 
 end
