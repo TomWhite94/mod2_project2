@@ -11,12 +11,18 @@ class QuizzesController < ApplicationController
     end
 
     def mark
-        byebug
-        quizzes = Quiz.find(params[:s])
+        @genre_id = params[:genre_id]
+        @difficulty_id = params[:difficulty_id]
+        @quizzes = Quiz.all.where(genre_id: @genre_id).where(difficulty_id: @difficulty_id)
         @answers = []
-        quizzes.each do |q|
-            answers << {quiz: q, right: q.right_answers?(params["quiz#{q.id}"])}
+        @quizzes.each do |q|
+            if q.answer == params[:q]
+            @answers << params[:q]
+            end
         end
+        
+        byebug
+        @answers.save
     end
 
 
