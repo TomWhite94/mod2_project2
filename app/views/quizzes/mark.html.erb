@@ -1,0 +1,5 @@
+<%= @answers.each do |answer|%>
+<%= answer[:quiz].question %>
+<%= answer[:right]? "Correct!" : "Oops!" %>
+<%= answer[:quiz].right_answer %>
+<% end %>

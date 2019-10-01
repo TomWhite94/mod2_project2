@@ -7,10 +7,9 @@ class Quiz < ApplicationRecord
 
     
 
-def difficulty_array
-    a = Quiz.select {|quiz| quiz.difficulty == "Easy"}
-    a = Quiz.map {|q| q.difficulty }
-end
+    def right_answer(reply)
+        return self.answer == reply
+    end
 
 
 end

@@ -1,11 +1,12 @@
 <h1>Your Quiz List (5 Questions!!!)</h1>
 
+<%= form_tag quiz_mark_path do %>
+
 <% @random_quiz_questions.each do |quiz| %>
 <p><%= quiz.question %></p><br>
-<%= image_tag(quiz.image_url) %>
+<% hidden_field_tag "quiz[]", quiz.id %>
+<label>Your Answer: <%= text_field_tag "quiz#{quiz.id}" %></label>
+<p><%= image_tag(quiz.image_url) %></p><br>
 <% end %>
-
-<style>/*
-<= image_tag(quiz.image_url) >
-can not populate image as quiz does not belong to image (there is no structure like one image has many questions related to itself)
-*/<style>
+<%= submit_tag "Submit Your Answers"%>
+<% end %>
