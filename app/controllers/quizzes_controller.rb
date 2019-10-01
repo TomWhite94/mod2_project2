@@ -11,19 +11,21 @@ class QuizzesController < ApplicationController
     end
 
     def mark
-        byebug
-        quizzes = Quiz.find(params[:s])
+        
+        quizzes = Quiz.find(params[:quizzes])
+        
         @answers = []
         quizzes.each do |q|
-            answers << {quiz: q, right: q.right_answers?(params["quiz#{q.id}"])}
+            @answers << {quiz: q, right: q.right_answer(params["quiz#{q.id}"])}
         end
+        # byebug
     end
 
 
     private
     
     def quiz_params
-        params.require(:quiz).permit!
+        params.require(:quiz).permit(:question, :difficulty_id, :genre_id, :answers, :image_url, :quizzes)
     end
 
 

@@ -4,7 +4,7 @@
 
 <% @random_quiz_questions.each do |quiz| %>
 <p><%= quiz.question %></p><br>
-<% hidden_field_tag "quiz[]", quiz.id %>
+<%= hidden_field_tag "quizzes[]", quiz.id %>
 <label>Your Answer: <%= text_field_tag "quiz#{quiz.id}" %></label>
 <p><%= image_tag(quiz.image_url) %></p><br>
 <% end %>
