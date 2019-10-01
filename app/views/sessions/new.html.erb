@@ -1,0 +1,17 @@
+<h1>Log In</h1>
+
+<%= form_tag sessions_path do%>
+
+<%= label :user, :name%>
+<%= text_field :user, :name%>
+<br>
+<br>
+<%=label :user, :password%>
+<%=password_field :user, :password%>
+<br>
+<br>
+<%=submit_tag "Log In"%>
+<p> Don't have an account? Create one <%= link_to "here", new_user_path %></p>
+
+
+<% end %>
