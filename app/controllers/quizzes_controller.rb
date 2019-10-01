@@ -5,7 +5,8 @@ class QuizzesController < ApplicationController
 
     def quiz_session
         @genre_id = params[:genre_id]
-        @quizzes = Quiz.all.where(genre_id: @genre_id)
+        @difficulty_id = params[:difficulty_id]
+        @quizzes = Quiz.all.where(genre_id: @genre_id).where(difficulty_id: @difficulty_id)
         @random_quiz_questions = @quizzes.order("RANDOM()").limit(5)
     end
 
