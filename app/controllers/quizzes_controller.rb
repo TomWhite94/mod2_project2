@@ -10,6 +10,16 @@ class QuizzesController < ApplicationController
         @random_quiz_questions = @quizzes.order("RANDOM()").limit(5)
     end
 
+    def mark
+        byebug
+        quizzes = Quiz.find(params[:s])
+        @answers = []
+        quizzes.each do |q|
+            answers << {quiz: q, right: q.right_answers?(params["quiz#{q.id}"])}
+        end
+    end
+
+
     private
     
     def quiz_params
