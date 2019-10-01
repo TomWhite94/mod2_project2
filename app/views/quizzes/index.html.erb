@@ -5,7 +5,15 @@
 <p>
 <%= label_tag :genre_id, "Genre:" %>
 <%= select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: true %>
+<p>
+<%= label_tag :difficulty, "Challenge level:" %>
+<%= select_tag :difficulty, options_from_collection_for_select(["Easy", "Mid", "Hard"], "id", "name", selected: @difficulty), include_blank: true %>
 </p><br>
+
+</p><br>
+
+
+
 <%= submit_tag "Start Quiz!" %>
 <% end %>
 
