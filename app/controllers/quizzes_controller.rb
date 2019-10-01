@@ -9,7 +9,8 @@ class QuizzesController < ApplicationController
         @random_quiz_questions = @quizzes.order("RANDOM()").limit(5)
     end
 
-
+    private
+    
     def quiz_params
         params.require(:quiz).permit!
     end
