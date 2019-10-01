@@ -21,11 +21,6 @@ class SessionsController < ApplicationController
         redirect_to new_session_path
     end
 
-    private
-    
-    def session_params
-        params.require(:sessions).permit!
-    end
 
 
 
