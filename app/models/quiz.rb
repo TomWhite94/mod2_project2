@@ -8,7 +8,9 @@ class Quiz < ApplicationRecord
     
 
     def right_answer(reply)
+        # byebug
         return self.answer == reply
+        
     end
 
 
