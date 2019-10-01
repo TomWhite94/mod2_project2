@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         @user.save
-        session[:user_id] = @userid
+        session[:user_id] = @user.id
         
         redirect_to quizzes_path
     end
