@@ -18,7 +18,7 @@ d1 = Difficulty.create(:name => "Easy")
 d2 = Difficulty.create(:name => "Mid")
 d3 = Difficulty.create(:name => "Hard")
 
-g1 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
+i1 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i2 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i3 = Image.create(:image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg", :genre_id => g1.id)
 i4 = Image.create(:image_url => "https://en.wikipedia.org/wiki/Tom_Cruise#/media/File:Tom_Cruise_by_Gage_Skidmore_2.jpg", :genre_id => g2.id)
@@ -84,3 +84,5 @@ q42 = Quiz.create(:question => "Who is this sports42?", :difficulty_id => d3.id,
 q43 = Quiz.create(:question => "Who is this sports43?", :difficulty_id => d3.id, :genre_id => g3.id, :answer => "Rugby", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
 q44 = Quiz.create(:question => "Who is this sports44?", :difficulty_id => d3.id, :genre_id => g3.id, :answer => "Rugby", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
 q45 = Quiz.create(:question => "Who is this sports45?", :difficulty_id => d3.id, :genre_id => g3.id, :answer => "Rugby", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
+
+qr1 = QuizResult.create(user)
