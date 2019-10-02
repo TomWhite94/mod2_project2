@@ -31,10 +31,11 @@ ActiveRecord::Schema.define(version: 2019_10_01_085017) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "quiz_users", force: :cascade do |t|
+  create_table "quiz_results", force: :cascade do |t|
     t.integer "user_id"
     t.integer "quiz_id"
-    t.boolean "answers"
+    t.integer "difficulty_id"
+    t.integer "answers"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

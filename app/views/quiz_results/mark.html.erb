@@ -1,6 +1,10 @@
+<%= form_tag quiz_results_path do%>
+
 <% @answers.each do |answer|%>
 <p> Question: <%= answer[:quiz].question %></p>
 <p> You got a.............: <%= answer[:right]? "Correct Answer!" : "Wrong!!" %></p>
 <p> Correct Answer: <%= answer[:quiz].answer %></p>
 <% end %>
-<p>WELL DONE</p>
+
+<%end%>
+<br><%= link_to "Save Results", quiz_results_path%>

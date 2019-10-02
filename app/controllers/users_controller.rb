@@ -16,7 +16,7 @@ class UsersController < ApplicationController
         @user.save
         session[:user_id] = @user.id
         
-        redirect_to quizzes_path
+        redirect_to quiz_results_path
     end
 
     def edit

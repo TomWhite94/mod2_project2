@@ -1,0 +1,8 @@
+<h1>Your Previous Results</h1>
+
+<% @my_results.each do |q|%>
+<%= q.difficulty.name%>
+<%= q.answers %>
+<%end%>
+
+<br><%= link_to "Back to Home Page", quiz_results_path%>
