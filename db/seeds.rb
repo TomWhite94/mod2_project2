@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u1 = User.create(:name => "Takeshi", :password => "password1")
-u1 = User.create(:name => "Nigel", :password => "password1")
+u2 = User.create(:name => "Nigel", :password => "password1")
 u3 = User.create(:name => "Tom", :password => "password1")
 
 g1 = Genre.create(:name => "Food")
@@ -85,4 +85,56 @@ q43 = Quiz.create(:question => "Who is this sports43?", :difficulty_id => d3.id,
 q44 = Quiz.create(:question => "Who is this sports44?", :difficulty_id => d3.id, :genre_id => g3.id, :answer => "Rugby", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
 q45 = Quiz.create(:question => "Who is this sports45?", :difficulty_id => d3.id, :genre_id => g3.id, :answer => "Rugby", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
 
-qr1 = QuizResult.create(user)
+qr1 = QuizResult.create(:user_id => u1.id, :quiz_id => q1.id, :difficulty_id => d1.id, :genre_id => g1.id, :answers => 3)
+qr2 = QuizResult.create(:user_id => u1.id, :quiz_id => q2.id, :difficulty_id => d1.id, :genre_id => g1.id, :answers => 2)
+qr3 = QuizResult.create(:user_id => u1.id, :quiz_id => q3.id, :difficulty_id => d1.id, :genre_id => g1.id, :answers => 1)
+qr4 = QuizResult.create(:user_id => u1.id, :quiz_id => q4.id, :difficulty_id => d1.id, :genre_id => g1.id, :answers => 4)
+qr5 = QuizResult.create(:user_id => u1.id, :quiz_id => q5.id, :difficulty_id => d1.id, :genre_id => g1.id, :answers => 5)
+qr6 = QuizResult.create(:user_id => u1.id, :quiz_id => q6.id, :difficulty_id => d2.id, :genre_id => g1.id, :answers => 2)
+qr7 = QuizResult.create(:user_id => u1.id, :quiz_id => q7.id, :difficulty_id => d2.id, :genre_id => g1.id, :answers => 1)
+qr8 = QuizResult.create(:user_id => u1.id, :quiz_id => q8.id, :difficulty_id => d2.id, :genre_id => g1.id, :answers => 1)
+qr9 = QuizResult.create(:user_id => u1.id, :quiz_id => q9.id, :difficulty_id => d2.id, :genre_id => g1.id, :answers => 2)
+qr10 = QuizResult.create(:user_id => u1.id, :quiz_id => q10.id, :difficulty_id => d2.id, :genre_id => g1.id, :answers => 3)
+qr11 = QuizResult.create(:user_id => u1.id, :quiz_id => q11.id, :difficulty_id => d3.id, :genre_id => g1.id, :answers => 2)
+qr12 = QuizResult.create(:user_id => u1.id, :quiz_id => q12.id, :difficulty_id => d3.id, :genre_id => g1.id, :answers => 1)
+qr13 = QuizResult.create(:user_id => u1.id, :quiz_id => q13.id, :difficulty_id => d3.id, :genre_id => g1.id, :answers => 1)
+qr14 = QuizResult.create(:user_id => u1.id, :quiz_id => q14.id, :difficulty_id => d3.id, :genre_id => g1.id, :answers => 2)
+qr15 = QuizResult.create(:user_id => u1.id, :quiz_id => q15.id, :difficulty_id => d3.id, :genre_id => g1.id, :answers => 3)
+
+qr16 = QuizResult.create(:user_id => u2.id, :quiz_id => q16.id, :difficulty_id => d1.id, :genre_id => g2.id, :answers => 3)
+qr17 = QuizResult.create(:user_id => u2.id, :quiz_id => q17.id, :difficulty_id => d1.id, :genre_id => g2.id, :answers => 2)
+qr18 = QuizResult.create(:user_id => u2.id, :quiz_id => q18.id, :difficulty_id => d1.id, :genre_id => g2.id, :answers => 1)
+qr19 = QuizResult.create(:user_id => u2.id, :quiz_id => q19.id, :difficulty_id => d1.id, :genre_id => g2.id, :answers => 4)
+qr20 = QuizResult.create(:user_id => u2.id, :quiz_id => q20.id, :difficulty_id => d1.id, :genre_id => g2.id, :answers => 5)
+qr21 = QuizResult.create(:user_id => u2.id, :quiz_id => q21.id, :difficulty_id => d2.id, :genre_id => g2.id, :answers => 2)
+qr22 = QuizResult.create(:user_id => u2.id, :quiz_id => q22.id, :difficulty_id => d2.id, :genre_id => g2.id, :answers => 1)
+qr23 = QuizResult.create(:user_id => u2.id, :quiz_id => q23.id, :difficulty_id => d2.id, :genre_id => g2.id, :answers => 1)
+qr24 = QuizResult.create(:user_id => u2.id, :quiz_id => q24.id, :difficulty_id => d2.id, :genre_id => g2.id, :answers => 2)
+qr25 = QuizResult.create(:user_id => u2.id, :quiz_id => q25.id, :difficulty_id => d2.id, :genre_id => g2.id, :answers => 3)
+qr26 = QuizResult.create(:user_id => u2.id, :quiz_id => q26.id, :difficulty_id => d3.id, :genre_id => g2.id, :answers => 2)
+qr27 = QuizResult.create(:user_id => u2.id, :quiz_id => q27.id, :difficulty_id => d3.id, :genre_id => g2.id, :answers => 1)
+qr28 = QuizResult.create(:user_id => u2.id, :quiz_id => q28.id, :difficulty_id => d3.id, :genre_id => g2.id, :answers => 1)
+qr29 = QuizResult.create(:user_id => u2.id, :quiz_id => q29.id, :difficulty_id => d3.id, :genre_id => g2.id, :answers => 2)
+qr30 = QuizResult.create(:user_id => u2.id, :quiz_id => q30.id, :difficulty_id => d3.id, :genre_id => g2.id, :answers => 3)
+
+qr31 = QuizResult.create(:user_id => u3.id, :quiz_id => q31.id, :difficulty_id => d1.id, :genre_id => g3.id, :answers => 3)
+qr32 = QuizResult.create(:user_id => u3.id, :quiz_id => q32.id, :difficulty_id => d1.id, :genre_id => g3.id, :answers => 2)
+qr33 = QuizResult.create(:user_id => u3.id, :quiz_id => q33.id, :difficulty_id => d1.id, :genre_id => g3.id, :answers => 1)
+qr34 = QuizResult.create(:user_id => u3.id, :quiz_id => q34.id, :difficulty_id => d1.id, :genre_id => g3.id, :answers => 4)
+qr35 = QuizResult.create(:user_id => u3.id, :quiz_id => q35.id, :difficulty_id => d1.id, :genre_id => g3.id, :answers => 5)
+qr36 = QuizResult.create(:user_id => u3.id, :quiz_id => q36.id, :difficulty_id => d2.id, :genre_id => g3.id, :answers => 2)
+qr37 = QuizResult.create(:user_id => u3.id, :quiz_id => q37.id, :difficulty_id => d2.id, :genre_id => g3.id, :answers => 1)
+qr38 = QuizResult.create(:user_id => u3.id, :quiz_id => q38.id, :difficulty_id => d2.id, :genre_id => g3.id, :answers => 1)
+qr39 = QuizResult.create(:user_id => u3.id, :quiz_id => q39.id, :difficulty_id => d2.id, :genre_id => g3.id, :answers => 2)
+qr40 = QuizResult.create(:user_id => u3.id, :quiz_id => q40.id, :difficulty_id => d2.id, :genre_id => g3.id, :answers => 3)
+qr41 = QuizResult.create(:user_id => u3.id, :quiz_id => q41.id, :difficulty_id => d3.id, :genre_id => g3.id, :answers => 2)
+qr42 = QuizResult.create(:user_id => u3.id, :quiz_id => q42.id, :difficulty_id => d3.id, :genre_id => g3.id, :answers => 1)
+qr43 = QuizResult.create(:user_id => u3.id, :quiz_id => q43.id, :difficulty_id => d3.id, :genre_id => g3.id, :answers => 1)
+qr44 = QuizResult.create(:user_id => u3.id, :quiz_id => q44.id, :difficulty_id => d3.id, :genre_id => g3.id, :answers => 2)
+qr45 = QuizResult.create(:user_id => u3.id, :quiz_id => q45.id, :difficulty_id => d3.id, :genre_id => g3.id, :answers => 3)
+
+
+
+
+
+
