@@ -2,15 +2,19 @@
 <h3>Please choose your quize genre</h3>
 
 <%= form_tag({action: :quiz_session}, {method: :get}) do%>
-<p>
+
+<div class="myclass">
 <%= label_tag :genre_id, "Genre:" %>
-<%= select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: true %>
-<p><br>
+<%= select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: "Please Choose Genre" %>
+</div><br>
+<div class="myclass">
 <%= label_tag :difficulty_id, "Challenge level:" %>
-<%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: true %>
-</p><br>
+<%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: "Please Choose Challnge Level" %>
+</div><br>
+
 
 <%= submit_tag "Start Quiz!" %><br>
+
 
 <%=link_to "Previous Results", previous_results_path%>
 <% end %>
@@ -19,6 +23,7 @@
 
 <table border="1">
 <h3>Top 10</h3>
+
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @top10.each do |qr| %>
 <tr>

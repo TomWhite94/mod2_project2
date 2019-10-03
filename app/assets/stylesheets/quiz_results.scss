@@ -1,0 +1,20 @@
+// Place all the styles related to the difficulties controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+  table th {/*table内のthに対して*/
+    padding: 10px;/*上下左右10pxずつ*/
+    color: black;
+    background: #87a0dfc6;
+  }
+  
+  table td {/*table内のtdに対して*/
+    padding: 3px 10px;/*上下3pxで左右10px*/
+    text-align: center;
+    background: #66bc7ec6;
+  }
+
+  .myclass select {
+    color: black;
+    background: #e3a242c6;
+  }

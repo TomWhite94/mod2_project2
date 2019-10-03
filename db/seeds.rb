@@ -30,10 +30,10 @@ i9 = Image.create(:image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpspr
 
 
 q1 = Quiz.create(:question => "What is the official name for this country?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "the United Kingdom of Great Britain and Northern Ireland", :image_url => "https://image.shutterstock.com/image-vector/map-united-kingdom-600w-123162814.jpg")
-q2 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Japan", :image_url => "https://www.nationsonline.org/maps/Japan-Region-Map.jpg")
-q3 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "France", :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9IOpNmjSxqcBixC__0tSuSjUZ53CZXZIKjBVYFxH6MhO34P8")
-q4 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Lithuania", :image_url => "https://www.nationsonline.org/map_small/lithuania_small_map.jpg")
-q5 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Germany", :image_url => "https://www.who.int/sysmedia/images/countries/deu.gif")
+q2 = Quiz.create(:question => "What country is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Japan", :image_url => "https://www.nationsonline.org/maps/Japan-Region-Map.jpg")
+q3 = Quiz.create(:question => "What country is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "France", :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9IOpNmjSxqcBixC__0tSuSjUZ53CZXZIKjBVYFxH6MhO34P8")
+q4 = Quiz.create(:question => "What country is this??", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Lithuania", :image_url => "https://www.nationsonline.org/map_small/lithuania_small_map.jpg")
+q5 = Quiz.create(:question => "What country is this??", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Germany", :image_url => "https://www.who.int/sysmedia/images/countries/deu.gif")
 
 q6 = Quiz.create(:question => "What is this food6?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
 q7 = Quiz.create(:question => "What is this food7?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
