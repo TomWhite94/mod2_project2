@@ -11,7 +11,7 @@ u2 = User.create(:name => "Nigel", :password => "password1")
 u3 = User.create(:name => "Tom", :password => "password1")
 
 g1 = Genre.create(:name => "Geography")
-g2 = Genre.create(:name => "Drama")
+g2 = Genre.create(:name => "Hisory")
 g3 = Genre.create(:name => "Sports")
 
 d1 = Difficulty.create(:name => "Easy")
