@@ -14,7 +14,7 @@ g1 = Genre.create(:name => "Geography")
 g2 = Genre.create(:name => "Hisory")
 g3 = Genre.create(:name => "Sports")
 
-d1 = Difficulty.create(:name => "Easy")
+d1 = Difficulty.create(:name => "Easy")s
 d2 = Difficulty.create(:name => "Mid")
 d3 = Difficulty.create(:name => "Hard")
 
@@ -35,24 +35,24 @@ q3 = Quiz.create(:question => "What country is this?", :difficulty_id => d1.id, 
 q4 = Quiz.create(:question => "What country is this??", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Lithuania", :image_url => "https://www.nationsonline.org/map_small/lithuania_small_map.jpg")
 q5 = Quiz.create(:question => "What country is this??", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Germany", :image_url => "https://www.who.int/sysmedia/images/countries/deu.gif")
 
-q6 = Quiz.create(:question => "What is this food6?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q7 = Quiz.create(:question => "What is this food7?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q8 = Quiz.create(:question => "What is this food8?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q9 = Quiz.create(:question => "What is this food9?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q10 = Quiz.create(:question => "What is this food10?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
+q6 = Quiz.create(:question => "What country is this?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Russia", :image_url => "https://www.jetpunk.com/img/user-photo-library/ed/edf4f385d5-235.png")
+q7 = Quiz.create(:question => "What country is this?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Spain", :image_url => "https://www.jetpunk.com/img/user-photo-library/19/19889b3142-235.png")
+q8 = Quiz.create(:question => "What country is this?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Afghanistan", :image_url => "https://www.jetpunk.com/img/user-photo-library/c3/c39deae9be-235.png")
+q9 = Quiz.create(:question => "WWhat country is this?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Austira", :image_url => "https://www.jetpunk.com/img/user-photo-library/75/750a2bd33c-235.png")
+q10 = Quiz.create(:question => "What country is this?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Vietnam", :image_url => "https://www.jetpunk.com/img/user-photo-library/c5/c53bb20d83-235.png")
 
-q11 = Quiz.create(:question => "What is this food11?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q12 = Quiz.create(:question => "What is this food12?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q13 = Quiz.create(:question => "What is this food13?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q14 = Quiz.create(:question => "What is this food14?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q15 = Quiz.create(:question => "What is this food15?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
+q11 = Quiz.create(:question => "What country is this?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Argentina", :image_url => "https://www.jetpunk.com/img/user-photo-library/d9/d9bf537ad2-235.png")
+q12 = Quiz.create(:question => "What country is this?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Panama", :image_url => "https://www.jetpunk.com/img/user-photo-library/83/83bacf59c3-235.png")
+q13 = Quiz.create(:question => "What country is this?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Mexico", :image_url => "https://www.jetpunk.com/img/user-photo-library/c7/c730cbece7-235.png")
+q14 = Quiz.create(:question => "What country is this?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Iraq", :image_url => "https://www.jetpunk.com/img/user-photo-library/1d/1df253a585-235.png")
+q15 = Quiz.create(:question => "What country is this?", :difficulty_id => d3.id, :genre_id => g1.id, :answer => "Indonesia", :image_url => "https://www.jetpunk.com/img/user-photo-library/9c/9c1e8f9bea-235.png")
 
 
-q16 = Quiz.create(:question => "Who is this actor16?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
-q17 = Quiz.create(:question => "Who is this actor17?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
-q18 = Quiz.create(:question => "Who is this actor18?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
-q19 = Quiz.create(:question => "Who is this actor19?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
-q20 = Quiz.create(:question => "Who is this actor20?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
+q16 = Quiz.create(:question => "Who is this guy", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "Henry VIII of England", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Workshop_of_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg/440px-Workshop_of_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg")
+q17 = Quiz.create(:question => "Who is this lady?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "Catherine of Aragon", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg/440px-Catalina_de_Arag%C3%B3n%2C_por_un_artista_an%C3%B3nimo.jpg")
+q18 = Quiz.create(:question => "Who is this lady?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "Anne Boleyn", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Anne_boleyn.jpg/440px-Anne_boleyn.jpg")
+q19 = Quiz.create(:question => "Who is this lady?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "Jane Seymour", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hans_Holbein_the_Younger_-_Jane_Seymour%2C_Queen_of_England_-_Google_Art_Project.jpg/440px-Hans_Holbein_the_Younger_-_Jane_Seymour%2C_Queen_of_England_-_Google_Art_Project.jpg")
+q20 = Quiz.create(:question => "Who is this lady?", :difficulty_id => d1.id, :genre_id => g2.id, :answer => "Anne of Cleves", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Anne_of_Cleves%2C_by_Hans_Holbein_the_Younger.jpg/440px-Anne_of_Cleves%2C_by_Hans_Holbein_the_Younger.jpg")
 
 q21 = Quiz.create(:question => "Who is this actor21?", :difficulty_id => d2.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")
 q22 = Quiz.create(:question => "Who is this actor22?", :difficulty_id => d2.id, :genre_id => g2.id, :answer => "TomW", :image_url => "https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png")

@@ -10,6 +10,10 @@ class QuizResultsController < ApplicationController
         @top3_by_genre3 = QuizResult.top_3_by_genre3
         @bottom3_by_genre3 = QuizResult.bottom_3_by_genre3
 
+        @genre_1_name = Genre.find(@top3_by_genre1.last.genre_id).name
+        @genre_2_name = Genre.find(@top3_by_genre2.last.genre_id).name
+        @genre_3_name = Genre.find(@top3_by_genre3.last.genre_id).name
+
     end
 
     def quiz_session
