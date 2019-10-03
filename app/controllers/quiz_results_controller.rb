@@ -1,5 +1,5 @@
 class QuizResultsController < ApplicationController
-    
+    before_action :authorize_user, only: [:quiz_session, :mark, :previous_results] # Before we let a user access any of these routes, we check if they're logged in
     def index
     end
 
@@ -24,7 +24,7 @@ class QuizResultsController < ApplicationController
                     @correct_answers << q 
                 end
             end
-        @quiz_answers = QuizResult.create(user_id: session[:user_id], quiz_id: @answers.first[:quiz][:id], difficulty_id: @answers.first[:quiz][:difficulty_id], answers: @correct_answers.length)
+        @quiz_answers = QuizResult.create(user_id: session[:user_id], quiz_id: @answers.first[:quiz][:id], difficulty_id: @answers.first[:quiz][:difficulty_id], genre_id: @answers.first[:quiz][:genre_id], answers: @correct_answers.length)
        
     
 

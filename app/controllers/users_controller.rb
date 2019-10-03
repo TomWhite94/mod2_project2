@@ -25,6 +25,15 @@ class UsersController < ApplicationController
     def update
     end
 
+    def destroy
+        
+        User.destroy(session[:user_id])
+        session.destroy
+        
+        redirect_to new_session_path
+    end
+
+
 
 
 

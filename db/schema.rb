@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_085017) do
     t.integer "user_id"
     t.integer "quiz_id"
     t.integer "difficulty_id"
+    t.integer "genre_id"
     t.integer "answers"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

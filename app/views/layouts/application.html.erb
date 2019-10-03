@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
   <head>
     <title>Mod2project</title>
     <%= csrf_meta_tags %>
@@ -10,15 +14,22 @@
   </head>
 
   <body>
+ 
+   
     <% if flash[:notice] %>
     <h3><%= flash[:notice]%></h3>
     <% end %>
     <% if current_user %>
-    <h2> Hello, <%= current_user.name%>!</h2>
-    <%= link_to "Logout", sessions_path, method: :delete%>
+      <div class="topnav">
+    <a class="active" href="#home"><%= current_user.name%></a>
+    <a <%= link_to "Logout", sessions_path, method: :delete%></a>
+    <a <%=link_to "Delete User", user_path(:user_id), method: :delete, data: {confirm: 'Are you sure?'} %></a>
     <% else%>
-    <%= link_to "Login", new_session_path%>
-    <% end %>
+    <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a <%= link_to "Login", new_session_path%></a>
+    <% end %><br><br><br>
+
 
     <%= yield %>
   </body>

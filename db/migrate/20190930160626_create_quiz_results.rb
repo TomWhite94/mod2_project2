@@ -4,6 +4,7 @@ class CreateQuizResults < ActiveRecord::Migration[6.0]
       t.integer :user_id
       t.integer :quiz_id
       t.integer :difficulty_id
+      t.integer :genre_id
       t.integer :answers
      
 

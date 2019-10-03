@@ -1,12 +1,15 @@
-<h1>Your Quiz List (5 Questions!!!)</h1>
+    <div class ="container text-center">
+    <h1>Your Quiz</h1>
 
-<%= form_tag quiz_mark_path do %>
+    <%= form_tag quiz_mark_path do %>
 
-<% @random_quiz_questions.each do |quiz| %>
-<p><%= quiz.question %></p><br>
-<%= hidden_field_tag "quizzes[]", quiz.id %>
-<label>Your Answer: <%= text_field_tag "quiz#{quiz.id}" %></label>
-<p><%= image_tag(quiz.image_url) %></p><br>
-<% end %>
-<%= submit_tag "Submit Your Answers"%>
-<% end %>
+    <% @random_quiz_questions.each do |quiz| %>
+    <p><%= quiz.question %></p><br>
+    <p><%= image_tag(quiz.image_url) %></p><br>
+    <%= hidden_field_tag "quizzes[]", quiz.id %>
+    <label>Your Answer: <%= text_field_tag "quiz#{quiz.id}" %></label><br><br>
+    
+    <% end %>
+    <%= submit_tag "Submit Your Answers"%>
+    <% end %>
+    </div>

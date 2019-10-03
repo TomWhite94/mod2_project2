@@ -1,8 +1,12 @@
 <h1>Your Previous Results</h1>
 
 <% @my_results.each do |q|%>
-<%= q.difficulty.name%>
-<%= q.answers %>
+<h3>Difficulty:</h3>
+<%= q.difficulty.name%><br>
+<h3>Genre:</h3>
+<%= q.genre.name%><br>
+<h3>Correct Answers:</h3>
+<%= q.answers %><br><br><br>
 <%end%>
 
 <br><%= link_to "Back to Home Page", quiz_results_path%>
