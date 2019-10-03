@@ -10,12 +10,91 @@
 <%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: true %>
 </p><br>
 
-</p><br>
-
-
-
 <%= submit_tag "Start Quiz!" %><br>
 
 <%=link_to "Previous Results", previous_results_path%>
 <% end %>
+<br>
+<br>
 
+<h3>Top 10</h3>
+<% @top10.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+<br>
+
+<h3>Bottom 10</h3>
+<% @bottom10.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Top 3 by Genre Food</h3>
+<% @top3_by_genre1.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Bottom 3 by Genre Food</h3>
+<% @bottom3_by_genre1.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Top 3 by Genre Drama</h3>
+<% @top3_by_genre2.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Bottom 3 by Genre Drama</h3>
+<% @bottom3_by_genre2.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Top 3 by Genre Sports</h3>
+<% @top3_by_genre3.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+
+<h3>Bottom 3 by Genre Sports</h3>
+<% @bottom3_by_genre3.each do |qr| %>
+<div>
+<label>Score: <%= qr.answers %></label>
+<label>Player Name: <%= qr.user.name %></label>
+<label>Genre Name: <%= qr.genre.name %></label>
+<label>Challenge Levele: <%= qr.difficulty.name %></label>
+</div>
+<% end %>
+<br>

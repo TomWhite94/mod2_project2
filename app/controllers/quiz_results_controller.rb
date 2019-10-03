@@ -1,6 +1,15 @@
 class QuizResultsController < ApplicationController
     
     def index
+        @top10 = QuizResult.top_10
+        @bottom10 = QuizResult.bottom_10
+        @top3_by_genre1 = QuizResult.top_3_by_genre1
+        @bottom3_by_genre1 = QuizResult.bottom_3_by_genre1
+        @top3_by_genre2 = QuizResult.top_3_by_genre2
+        @bottom3_by_genre2 = QuizResult.bottom_3_by_genre2
+        @top3_by_genre3 = QuizResult.top_3_by_genre3
+        @bottom3_by_genre3 = QuizResult.bottom_3_by_genre3
+
     end
 
     def quiz_session
