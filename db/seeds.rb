@@ -10,7 +10,7 @@ u1 = User.create(:name => "Takeshi", :password => "password1")
 u2 = User.create(:name => "Nigel", :password => "password1")
 u3 = User.create(:name => "Tom", :password => "password1")
 
-g1 = Genre.create(:name => "Food")
+g1 = Genre.create(:name => "Geography")
 g2 = Genre.create(:name => "Drama")
 g3 = Genre.create(:name => "Sports")
 
@@ -29,11 +29,11 @@ i8 = Image.create(:image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpspr
 i9 = Image.create(:image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg", :genre_id => g3.id)
 
 
-q1 = Quiz.create(:question => "What is this food1?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q2 = Quiz.create(:question => "What is this food2?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q3 = Quiz.create(:question => "What is this food3?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q4 = Quiz.create(:question => "What is this food4?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
-q5 = Quiz.create(:question => "What is this food5?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
+q1 = Quiz.create(:question => "What is the official name for this country?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "the United Kingdom of Great Britain and Northern Ireland", :image_url => "https://image.shutterstock.com/image-vector/map-united-kingdom-600w-123162814.jpg")
+q2 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Japan", :image_url => "https://www.nationsonline.org/maps/Japan-Region-Map.jpg")
+q3 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "France", :image_url => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9IOpNmjSxqcBixC__0tSuSjUZ53CZXZIKjBVYFxH6MhO34P8")
+q4 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Lithuania", :image_url => "https://www.nationsonline.org/map_small/lithuania_small_map.jpg")
+q5 = Quiz.create(:question => "Which chountry is this?", :difficulty_id => d1.id, :genre_id => g1.id, :answer => "Germany", :image_url => "https://www.who.int/sysmedia/images/countries/deu.gif")
 
 q6 = Quiz.create(:question => "What is this food6?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
 q7 = Quiz.create(:question => "What is this food7?", :difficulty_id => d2.id, :genre_id => g1.id, :answer => "Apple", :image_url => "https://image.shutterstock.com/image-photo/red-apple-on-white-background-600w-158989157.jpg")
