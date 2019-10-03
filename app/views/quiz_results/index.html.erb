@@ -26,11 +26,11 @@
 <%= form_tag({action: :quiz_session}, {method: :get}) do%>
 
 <div class="myclass">
-<%= label_tag :genre_id, "Genre:" %>
+<%= label_tag :genre_id, "Genre:" %><br>
 <%= select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: "Please Choose Genre" %>
 </div><br>
 <div class="myclass">
-<%= label_tag :difficulty_id, "Challenge level:" %>
+<%= label_tag :difficulty_id, "Challenge level:" %><br>
 <%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: "Please Choose Challnge Level" %>
 </div><br>
 
@@ -38,121 +38,11 @@
 <%= submit_tag "Start Quiz!" %><br>
 
 
-<%=link_to "Previous Results", previous_results_path%>
-
+<%=link_to "Previous Results", previous_results_path%><br><br><br>
+<%= link_to "Leaderboards", leaderboards_path%>
 <% end %>
 <br>
 <br>
 
-<table border="1">
-<h3>Top 10</h3>
 
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @top10.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Bottom 10</h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @bottom10.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Top 3 by Genre: <%= @genre_1_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @top3_by_genre1.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Bottom 3 by Genre: <%= @genre_1_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @bottom3_by_genre1.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Top 3 by Genre: <%= @genre_2_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @top3_by_genre2.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Bottom 3 by Genre: <%= @genre_2_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @bottom3_by_genre2.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Top 3 by Genre: <%= @genre_3_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @top3_by_genre3.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
-<br>
-
-<table border="1">
-<h3>Bottom 3 by Genre: <%= @genre_3_name %></h3>
-<tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
-<% @bottom3_by_genre3.each do |qr| %>
-<tr>
-<td><%= qr.answers %></td>
-<td><%= qr.user.name %></td>
-<td><%= qr.genre.name %></td>
-<td><%= qr.difficulty.name %></td>
-</tr>
-<% end %>
-</table>
 

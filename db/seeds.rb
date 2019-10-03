@@ -14,7 +14,7 @@ g1 = Genre.create(:name => "Geography")
 g2 = Genre.create(:name => "Hisory")
 g3 = Genre.create(:name => "Sports")
 
-d1 = Difficulty.create(:name => "Easy")s
+d1 = Difficulty.create(:name => "Easy")
 d2 = Difficulty.create(:name => "Mid")
 d3 = Difficulty.create(:name => "Hard")
 
