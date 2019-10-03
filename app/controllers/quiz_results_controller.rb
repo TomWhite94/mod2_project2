@@ -1,6 +1,19 @@
 class QuizResultsController < ApplicationController
     before_action :authorize_user, only: [:quiz_session, :mark, :previous_results] # Before we let a user access any of these routes, we check if they're logged in
     def index
+        @top10 = QuizResult.top_10
+        @bottom10 = QuizResult.bottom_10
+        @top3_by_genre1 = QuizResult.top_3_by_genre1
+        @bottom3_by_genre1 = QuizResult.bottom_3_by_genre1
+        @top3_by_genre2 = QuizResult.top_3_by_genre2
+        @bottom3_by_genre2 = QuizResult.bottom_3_by_genre2
+        @top3_by_genre3 = QuizResult.top_3_by_genre3
+        @bottom3_by_genre3 = QuizResult.bottom_3_by_genre3
+
+        @genre_1_name = Genre.find(@top3_by_genre1.last.genre_id).name
+        @genre_2_name = Genre.find(@top3_by_genre2.last.genre_id).name
+        @genre_3_name = Genre.find(@top3_by_genre3.last.genre_id).name
+
     end
 
     def quiz_session
