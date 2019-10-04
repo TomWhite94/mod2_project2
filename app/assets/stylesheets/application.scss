@@ -58,6 +58,8 @@
 .topnav a:hover {
   background-color: rgba(7, 158, 245, 0.726);
   color: black;
+   
+  
 }
 
 /* Add a color to the active/current link */
@@ -121,7 +123,7 @@ body {
 
 .layer:after {
   font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-  content: 'The\A    Quiz!';
+  content: 'クイズ!';
   white-space: pre;
   text-align: header;
   height: 100%;

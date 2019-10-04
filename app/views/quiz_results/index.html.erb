@@ -24,23 +24,24 @@
 <h3>Please choose your quiz</h3><br>
 
 <%= form_tag({action: :quiz_session}, {method: :get}) do%>
-<p>
+
+<div class="myclass">
 <%= label_tag :genre_id, "Genre:" %><br>
-<%= select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: true %>
-<p><br>
+<%= @genre_select = select_tag :genre_id, options_from_collection_for_select(Genre.all, "id", "name", selected: @genre_id), include_blank: "Please Choose Genre" %>
+</div><br>
+<div class="myclass">
 <%= label_tag :difficulty_id, "Challenge level:" %><br>
-<%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: true %>
-</p><br>
-
-</p><br>
-
-
-
+<%= select_tag :difficulty_id, options_from_collection_for_select(Difficulty.all, "id", "name", selected: @difficulty_id), include_blank: "Please Choose Challnge Level" %>
+</div><br>
+<% if @genre_select != "Please Choose Genre"%>
 <%= submit_tag "Start Quiz!" %><br>
+<%end%>
 
-<%=link_to "Previous Results", previous_results_path%>
-
+<%=link_to "Previous Results", previous_results_path%><br><br><br>
+<%= link_to "Leaderboards", leaderboards_path%>
 <% end %>
-</div>
+<br>
+<br>
+
 
 
