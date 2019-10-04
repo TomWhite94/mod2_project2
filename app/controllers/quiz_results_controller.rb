@@ -62,10 +62,20 @@ end
         @bottom3_by_genre2 = QuizResult.bottom_3_by_genre2
         @top3_by_genre3 = QuizResult.top_3_by_genre3
         @bottom3_by_genre3 = QuizResult.bottom_3_by_genre3
+        @record_number8 = QuizResult.all.where(genre_id: 3).min_by(3) {|qr| qr.answers }.length
+        @record_number7 = QuizResult.all.where(genre_id: 3).max_by(3) {|qr| qr.answers }.length
+        @record_number6 = QuizResult.all.where(genre_id: 2).min_by(3) {|qr| qr.answers }.length
+        @record_number5 = QuizResult.all.where(genre_id: 2).max_by(3) {|qr| qr.answers }.length
+        @record_number4 = QuizResult.all.where(genre_id: 1).min_by(3) {|qr| qr.answers }.length
+        @record_number3 = QuizResult.all.where(genre_id: 1).max_by(3) {|qr| qr.answers }.length
+        @record_number2 = QuizResult.all.min_by(10) {|qr| qr.answers }.length
+        @record_number1 = QuizResult.all.max_by(10) {|qr| qr.answers }.length
 
-        @genre_1_name = Genre.find(@top3_by_genre1.last.genre_id).name
-        @genre_2_name = Genre.find(@top3_by_genre2.last.genre_id).name
-        @genre_3_name = Genre.find(@top3_by_genre3.last.genre_id).name
+        @genre_1_name = Genre.find(1).name
+        @genre_2_name = Genre.find(2).name
+        @genre_3_name = Genre.find(3).name
+    
+        
     end
 
     
