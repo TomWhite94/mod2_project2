@@ -3,9 +3,10 @@
 
 
 
-<table border="1">
+
 <h3>Top 10</h3>
-<% if @record_number1 %>
+<% if @record_number1 > 0 %>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @top10.each do |qr| %>
     <tr>
@@ -22,9 +23,10 @@
 <br>
 
 
-<table border="1">
+
 <h3>Bottom 10</h3>
-<% if @record_number2 %>
+<% if @record_number2 > 0%>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @bottom10.each do |qr| %>
     <tr>
@@ -40,9 +42,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Top 3 by Genre: <%= @genre_1_name %></h3>
-<% if @record_number3 %>
+<% if @record_number3 > 0%>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @top3_by_genre1.each do |qr| %>
     <tr>
@@ -58,9 +61,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Bottom 3 by Genre: <%= @genre_1_name %></h3>
-<% if @record_number4 %>
+<% if @record_number4 > 0 %>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @bottom3_by_genre1.each do |qr| %>
     <tr>
@@ -76,9 +80,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Top 3 by Genre: <%= @genre_2_name %></h3>
-<% if @record_number5 %>
+<% if @record_number5 > 0%>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @top3_by_genre2.each do |qr| %>
     <tr>
@@ -94,9 +99,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Bottom 3 by Genre: <%= @genre_2_name %></h3>
-<% if @record_number6 %>
+<% if @record_number6 >0 %>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @bottom3_by_genre2.each do |qr| %>
     <tr>
@@ -112,9 +118,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Top 3 by Genre: <%= @genre_3_name %></h3>
-<% if @record_number7 %>
+<% if @record_number7 > 0%>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @top3_by_genre3.each do |qr| %>
     <tr>
@@ -130,9 +137,10 @@
 <% end %>
 <br>
 
-<table border="1">
+
 <h3>Bottom 3 by Genre: <%= @genre_3_name %></h3>
-<% if @record_number8 %>
+<% if @record_number8 > 0 %>
+<table border="1">
 <tr><th>Score</th> <th>Player Name</th> <th>Genre Name</th> <th>Challenge Level</th></tr>
 <% @bottom3_by_genre3.each do |qr| %>
     <tr>
