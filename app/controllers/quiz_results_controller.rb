@@ -1,16 +1,28 @@
 class QuizResultsController < ApplicationController
     before_action :authorize_user, only: [:quiz_session, :mark, :previous_results] # Before we let a user access any of these routes, we check if they're logged in
+    
+    
+    
     def index
         
 
     end
 
     def quiz_session
+        if params[:genre_id] == ""
+            redirect_to quiz_results_path
+            flash[:notice] = "You need to select a genre and challenge level to start a quiz!"
+
+        elsif params[:difficulty_id] == ""
+            redirect_to quiz_results_path
+            flash[:notice] = "You need to select a genre and challenge level to start a quiz!"
+        else
         @genre_id = params[:genre_id]
         @difficulty_id = params[:difficulty_id]
         @quizzes = Quiz.all.where(genre_id: @genre_id).where(difficulty_id: @difficulty_id)
         @random_quiz_questions = @quizzes.order("RANDOM()").limit(5)
     end
+end
 
     def mark
         

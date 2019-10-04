@@ -1,9 +1,15 @@
 class QuizResult < ApplicationRecord
 
-belongs_to :user 
+    validates :genre_id, {presence: true}
+    validates :difficulty_id, {presence: true}
+
+
+belongs_to :user
 belongs_to :quiz
 belongs_to :difficulty
 belongs_to :genre
+
+
 
     def self.top_10
         self.all.max_by(10) {|qr| qr.answers }

@@ -15,8 +15,14 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         @user.save
         session[:user_id] = @user.id
+
+        if @user.valid?
         
         redirect_to quiz_results_path
+        else  
+            flash[:notice] = "Your password must be at least 8 characters long, and the username must be available"
+            render :new
+        end
     end
 
     def edit
@@ -27,7 +33,15 @@ class UsersController < ApplicationController
 
     def destroy
         
+        current_user.quiz_results.destroy_all
+
+        
+        
+        
+        # QuizResult.destroy_all.where(user_id: session[:user_id])
+
         User.destroy(session[:user_id])
+       
         session.destroy
         
         redirect_to new_session_path
