@@ -34,7 +34,12 @@ belongs_to :genre
     end
 
     def self.bottom_3_by_genre3
-        self.all.where(genre_id: 3).min_by(3) {|qr| qr.answers }
+        @record_number = self.all.where(genre_id: 3).min_by(3) {|qr| qr.answers }.length
+            if @record_number < 3
+              self.all.where(genre_id: 3).min_by(@record_number) {|qr| qr.answers }
+            else
+              self.all.where(genre_id: 3).min_by(3) {|qr| qr.answers }
+            end
     end
 
 end

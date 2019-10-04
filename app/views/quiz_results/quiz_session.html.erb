@@ -1,7 +1,7 @@
     <div class ="container text-center">
     <h1>Your Quiz</h1>
 
-    <%= form_tag quiz_mark_path do %>
+    <%= form_tag quiz_mark_path, html: { autocomplete: "off" } do %>
 
     <% @random_quiz_questions.each do |quiz| %>
     <p><%= quiz.question %></p><br>
