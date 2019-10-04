@@ -70,7 +70,7 @@ q30 = Quiz.create(:question => "Who is this lady?", :difficulty_id => d3.id, :ge
 q31 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Dan Cole", :image_url => "https://upload.wikimedia.org/wikipedia/commons/1/10/Dan_Cole_RWC_2011_cropped.jpg")
 q32 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Luke Cowan-Dickie", :image_url => "https://alchetron.com/cdn/luke-cowan-dickie-c15d6e82-d6df-4971-8bd5-5e03ab0d92f-resize-750.jpeg")
 q33 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Tom Curry", :image_url => "http://www.therugbyblog.com/wp-content/uploads/ENGLAND_BARBARIANS_280517_065.jpg")
-q34 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Ellis Genge", :image_url => "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17E1A/production/_102081879_england.jpg")
+q34 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Ellis Genge", :image_url => "https://www.ultimaterugby.com/images/entities/231780-d06efb215b-11/EllisGengerugbyplayer.jpg")
 q35 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d1.id, :genre_id => g3.id, :answer => "Jamie George", :image_url => "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jgeorge.jpg")
 
 q36 = Quiz.create(:question => "Who is this guy?", :difficulty_id => d2.id, :genre_id => g3.id, :answer => "Joe Hart", :image_url => "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Joe_Hart_69775.jpg/400px-Joe_Hart_69775.jpg")
